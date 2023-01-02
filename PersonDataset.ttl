@@ -1,0 +1,43 @@
+PREFIX : <http://example-graph.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Anna
+:Anna a :Person ;
+  :name "Anna Muster" ;
+  :gender "Female" ;
+  :born_on "2000-08-21"^^xsd:date ;
+  :friend :Paul ;
+  :love :Oskar ;
+  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+
+:Paul a :Person ;
+  :name "Paul Muster" ;
+  :gender "Male" ;
+  :born_on "1993-08-21"^^xsd:date ;
+  :friend :Oskar ;
+  :hate :Fred ;
+  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+
+:Fred a :Person ;
+  :name "Fred Muster" ;
+  :gender "Male" ;
+  :born_on "1993-08-21"^^xsd:date ;
+  :friend :Paul ;
+  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+  
+:Oskar a :Person ;
+  :name "Oskar Muster" ;
+  :gender "Male" ;
+  :born_on "1993-08-21"^^xsd:date ;
+  :friend :Jane ;
+  :hate :Fred ;
+  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+
+:Jane a :Person ;
+  :name "Jane Muster" ;
+  :gender "Female" ;
+  :born_on "1993-08-21"^^xsd:date ;
+  :friend :Jane ;
+  :hate :Fred ;
+  :personality_trait "Cunning" , "Charismatic" , "Smart" .
