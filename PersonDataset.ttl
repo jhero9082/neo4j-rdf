@@ -50,5 +50,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :bj "2001-08"^^xsd:date .
   
 :Bicycle a :Means_Of_Transportation ;
-  :brand "Pegasus" ;
+  :brand "Pegasus" .
   
