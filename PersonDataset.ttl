@@ -1,4 +1,4 @@
-PREFIX : <http://example-graph.com/>
+PREFIX : <http://example-graph.com/>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -9,14 +9,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "2000-08-21"^^xsd:date ;
   :friend :Paul ;
   :love :Oskar ;
+  :drives :Bicycle ;
   :personality_trait "Cunning" , "Charismatic" , "Caring" .
 
 :Paul a :Person ;
   :name "Paul Muster" ;
   :gender "Male" ;
-  :born_on "1993-08-21"^^xsd:date ;
+  :born_on "1985-08-21"^^xsd:date ;
   :friend :Oskar ;
   :hate :Fred ;
+  :drives :Car1 ;
   :personality_trait "Empathetic" , "Fair" , "Helpful" .
 
 :Fred a :Person ;
@@ -38,6 +40,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :name "Jane Muster" ;
   :gender "Female" ;
   :born_on "1993-08-21"^^xsd:date ;
-  :friend :Jane ;
+  :friend :Anna ;
   :hate :Fred ;
   :personality_trait "Modest" , "Perfectionist" , "Objective" .
+  
+:Car1 a :Means_Of_Transportation ;
+  :brand "Audi" ;
+  :type "A1" ;
+  :bj "2001-08"^^xsd:date .
+  
+:Bicycle a :Means_Of_Transportation ;
+  :brand "Pegasus" ;
+  
