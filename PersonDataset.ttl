@@ -12,6 +12,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :drives :Bicycle ;
   :personality_trait "Cunning" , "Charismatic" , "Caring" .
 
+:Bicycle a :Means_Of_Transportation ;
+  :brand "Pegasus" .
+
 :Paul a :Person ;
   :name "Paul Muster" ;
   :gender "Male" ;
@@ -20,6 +23,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :hate :Fred ;
   :drives :Car1 ;
   :personality_trait "Empathetic" , "Fair" , "Helpful" .
+
+:Car1 a :Means_Of_Transportation ;
+  :brand "Audi" ;
+  :type "A1" ;
+  :bj "2001-08"^^xsd:date .
 
 :Fred a :Person ;
   :name "Fred Muster" ;
@@ -43,12 +51,3 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Anna ;
   :hate :Fred ;
   :personality_trait "Modest" , "Perfectionist" , "Objective" .
-  
-:Car1 a :Means_Of_Transportation ;
-  :brand "Audi" ;
-  :type "A1" ;
-  :bj "2001-08"^^xsd:date .
-  
-:Bicycle a :Means_Of_Transportation ;
-  :brand "Pegasus" .
-  
