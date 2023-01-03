@@ -9,7 +9,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "2000-08-21"^^xsd:date ;
   :friend :Paul ;
   :love :Oskar ;
-  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+  :personality_trait "Cunning" , "Charismatic" , "Caring" .
 
 :Paul a :Person ;
   :name "Paul Muster" ;
@@ -17,14 +17,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "1993-08-21"^^xsd:date ;
   :friend :Oskar ;
   :hate :Fred ;
-  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+  :personality_trait "Empathetic" , "Fair" , "Helpful" .
 
 :Fred a :Person ;
   :name "Fred Muster" ;
   :gender "Male" ;
   :born_on "1993-08-21"^^xsd:date ;
   :friend :Paul ;
-  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+  :personality_trait "Focused" , "Hardworking" , "Loyal" .
   
 :Oskar a :Person ;
   :name "Oskar Muster" ;
@@ -32,7 +32,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "1993-08-21"^^xsd:date ;
   :friend :Jane ;
   :hate :Fred ;
-  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+  :personality_trait "Friendly" , "Charismatic" , "Smart" .
 
 :Jane a :Person ;
   :name "Jane Muster" ;
@@ -40,4 +40,4 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "1993-08-21"^^xsd:date ;
   :friend :Jane ;
   :hate :Fred ;
-  :personality_trait "Cunning" , "Charismatic" , "Smart" .
+  :personality_trait "Modest" , "Perfectionist" , "Objective" .
