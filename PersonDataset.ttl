@@ -4,7 +4,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 # Anna
 :Anna a :Person ;
-  :name "Anna Muster" ;
+  :name "Anna Meier" ;
   :gender "Female" ;
   :born_on "2000-08-21"^^xsd:date ;
   :friend :Paul ;
@@ -16,7 +16,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :brand "Pegasus" .
 
 :Paul a :Person ;
-  :name "Paul Muster" ;
+  :name "Paul Müller" ;
   :gender "Male" ;
   :born_on "1985-08-21"^^xsd:date ;
   :friend :Oskar ;
@@ -30,24 +30,24 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :bj "2001-08"^^xsd:date .
 
 :Fred a :Person ;
-  :name "Fred Muster" ;
+  :name "Fred Schulz" ;
   :gender "Male" ;
   :born_on "1993-08-21"^^xsd:date ;
-  :friend :Paul ;
+  :friend :Jane  ;
   :personality_trait "Focused" , "Hardworking" , "Loyal" .
   
 :Oskar a :Person ;
   :name "Oskar Muster" ;
   :gender "Male" ;
-  :born_on "1993-08-21"^^xsd:date ;
+  :born_on "1985-03-31"^^xsd:date ;
   :friend :Jane ;
   :hate :Fred ;
   :personality_trait "Friendly" , "Charismatic" , "Smart" .
 
 :Jane a :Person ;
-  :name "Jane Muster" ;
+  :name "Jane Schmitz" ;
   :gender "Female" ;
-  :born_on "1993-08-21"^^xsd:date ;
+  :born_on "1982-04-26"^^xsd:date ;
   :friend :Anna ;
   :hate :Fred ;
   :personality_trait "Modest" , "Perfectionist" , "Objective" .
