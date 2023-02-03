@@ -1,4 +1,13 @@
-PREFIX : <http://example/>
-:x :p (4 5 6) .
+PREFIX : <http://example-graph.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:y :p (1 2 3) .
+# Anna
+:Anna a :Person ;
+  :name "Anna Meier" ;
+  :gender "Female" ;
+  :born_on "2000-08-21"^^xsd:date ;
+  :friend :Paul ;
+  :love :Oskar ;
+  :drives :Bicycle ;
+  :personality_trait "Cunning" , "Charismatic" , "Caring" .
