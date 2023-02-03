@@ -11,3 +11,199 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :love :Oskar ;
   :drives :Bicycle ;
   :personality_trait "Cunning" , "Charismatic" , "Caring" .
+
+:Bicycle a :Means_Of_Transportation ;
+  :brand "Pegasus" .
+
+# Paul
+:Paul a :Person ;
+  :name "Paul Müller" ;
+  :gender "Male" ;
+  :born_on "1985-08-21"^^xsd:date ;
+  :friend :Oskar ;
+  :drives :Car1 ;
+  :personality_trait "Empathetic" , "Fair" , "Helpful" .
+
+:Car1 a :Means_Of_Transportation ;
+  :brand "Audi" ;
+  :type "A1" ;
+  :bj "2001-08"^^xsd:date .
+
+# Fred
+:Fred a :Person ;
+  :name "Fred Schulz" ;
+  :gender "Male" ;
+  :born_on "1993-08-21"^^xsd:date ;
+  :friend :Jane  ;
+  :personality_trait "Focused" , "Hardworking" , "Loyal" .
+
+# Oskar
+:Oskar a :Person ;
+  :name "Oskar Muster" ;
+  :gender "Male" ;
+  :born_on "1985-03-31"^^xsd:date ;
+  :friend :Jane ;
+  :friend :Fred ;
+  :personality_trait "Friendly" , "Charismatic" , "Smart" .
+
+# Jane
+:Jane a :Person ;
+  :name "Jane Schmitz" ;
+  :gender "Female" ;
+  :born_on "1982-04-26"^^xsd:date ;
+  :friend :Anna ;
+  :hate :Fred ;
+  :personality_trait "Modest" , "Perfectionist" , "Objective" .
+
+:Amy a Person;
+:name Amy Johnson; 
+:gender "Female";
+:friend :Frank ;
+:born_on "1980-05-01"^^xsd:date ;
+:personality_trait "Organized", "Efficient", "Resourceful" .
+
+:Brian a Person;
+:name Brian Thompson;
+:gender "Male";
+:friend :Amy ;
+:hate :Caroline ;
+:born_on "1985-07-15"^^xsd:date ;
+:personality_trait "Outgoing" "Charismatic", "Confident" .
+
+:Caroline a Person;
+:name Caroline Wright,
+:gender "Female";
+:friend :Brian ;
+:friend :David ;
+:born_on "1990-03-20"^^xsd:date ;
+:personality_trait "Creative", "Ambitious", "Determined" .
+
+:David a Person;
+:name David Brown;
+:gender "Male";
+:friend :Caroline ;
+:born_on "1988-09-01"^^xsd:date ;
+:personality_trait "Analytical", "Intellectual", "Detail-Oriented" .
+
+:Elizabeth a Person;
+:name Elizabeth Davis;
+:gender "Female";
+:born_on "1986-12-25"^^xsd:date ;
+:friend :David ;
+:hate :Caroline ;
+:personality_trait "Kind", "Compassionate", "Empathetic" .
+
+:Frank a Person;
+:name Frank Johnson;
+:gender "Male";
+:born_on "1983-02-28"^^xsd:date ;
+:friend :Elizabeth ;
+:love :Henry ;
+:personality_trait "Reliable", "Responsible", "Practical" .
+
+:Grace a Person;
+:name Grace Chen;
+:gender "Female";
+:born_on "1991-11-05"^^xsd:date ;
+:friend :Isabel ;
+:hate :Henry ;
+:personality_trait "Optimistic", "Enthusiastic", "Confident" .
+
+:Henry a Person;
+:name Henry Lee;
+:gender "Male";
+:friend :Grace ;
+:hate :Henry ;
+:born_on "1984-04-01"^^xsd:date ;
+:personality_trait "Brave", "Daring", "Fearless" .
+
+:Isabel a Person;
+:name Isabel Rodriguez;
+:gender "Female";
+:born_on "1993-09-01"^^xsd:date ;
+:friend :Henry ;
+:friend :Jack ;
+:personality_trait "Artistic", "Expressive", "Imaginative" .
+
+:Jack a Person;
+:name Jack Smith ;
+:gender "Male" ;
+:friend :Katie ;
+:love :Isabel ;
+:born_on "1987-08-15"^^xsd:date ;
+:personality_trait "Competitive", "Determined", "Driven" .
+
+:Katie a Person;
+:name Katie Wilson;
+:gender "Female";
+:friend :Luke ;
+:hate :Jack ;
+:born_on "1994-01-10"^^xsd:date ;
+:personality_trait "Cooperative", "Diplomatic", "Compassionate" .
+
+:Luke a Person;
+:name Luke Gonzalez;
+:gender "Male";
+:friend :Nathan ;
+:born_on "1985-06-30"^^xsd:date ;
+:personality_trait "Outspoken", "Independent", "Assertive" .
+
+:Mary a Person;
+:name Mary Green;
+:gender "Female";
+:born_on "1990-02-05"^^xsd:date ;
+:friend :Luke ;
+:hate :Katie ;
+:personality_trait "Independent", "Confident", "Strong-Willed" .
+
+:Nathan a Person;
+:name Nathan Parker; 
+:gender "Male"; 
+:born_on "1992-07-20"^^xsd:date ;
+:hate :Olivia ;
+:friend :Raul ;
+:personality_trait "Confident", "Risk-Taker", "Daring"
+
+:Olivia a Person;
+:name Olivia Wilson; 
+:gender "Female"; 
+:born_on "1988-10-01"^^xsd:date ;
+:friend :William ;
+:personality_trait "Reflective", "Intuitive", "Thoughtful"
+
+:Raul a Person;
+:name Raul Nguyen; 
+:gender "Male"; 
+:born_on "1989-11-15"^^xsd:date ;
+:friend :Olivia ;
+:personality_trait "Imaginative", "Eccentric", "Quirky"
+
+:Rachel a Person;
+:name Rachel Lee; 
+:gender "Female"; 
+:born_on "1993-12-10"^^xsd:date ;
+:friend :Raul ;
+:hate :Scott ;
+:personality_trait "Compassionate", "Affectionate", "Warm" .
+
+:Scott a Person;
+:name Scott Rodriguez; 
+:gender "Male"; 
+:born_on "1987-01-01"^^xsd:date ;
+:friend :William ;
+:love :Tina ;
+:personality_trait "Driven", "Determined", "Ambitious" .
+
+:Tina a Person;
+:name Tina Chen; 
+:gender "Female"; 
+:born_on "1991-05-01"^^xsd:date ;
+:friend :Scott ;
+:personality_trait Inspired, "Creative", "Visionary" .
+
+:William a Person;
+:name William Davis ; 
+:gender "Male" ; 
+:born_on "1986-06-15"^^xsd:date ;
+:friend :Tina ;
+:personality_trait "Practical", "Diligent", "Organized" .
