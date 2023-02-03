@@ -55,37 +55,37 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :hate :Fred ;
   :personality_trait "Modest" , "Perfectionist" , "Objective" .
 
-:Amy a Person;
-:name "Amy Johnson";
-:gender "Female";
+:Amy a :Person ;
+:name "Amy Johnson" ;
+:gender "Female" ;
 :friend :Frank ;
 :born_on "1980-05-01"^^xsd:date ;
 :personality_trait "Organized", "Efficient", "Resourceful" .
 
-:Brian a Person;
+:Brian a :Person;
 :name "Brian Thompson";
 :gender "Male";
 :friend :Amy ;
 :hate :Caroline ;
 :born_on "1985-07-15"^^xsd:date ;
-:personality_trait "Outgoing" "Charismatic", "Confident" .
+:personality_trait "Outgoing", "Charismatic", "Confident" .
 
-:Caroline a Person;
-:name "Caroline Wright",
-:gender "Female";
+:Caroline a :Person;
+:name "Caroline Wright" ;
+:gender "Female" ;
 :friend :Brian ;
 :friend :David ;
 :born_on "1990-03-20"^^xsd:date ;
 :personality_trait "Creative", "Ambitious", "Determined" .
 
-:David a Person;
+:David a :Person;
 :name "David Brown";
 :gender "Male";
 :friend :Caroline ;
 :born_on "1988-09-01"^^xsd:date ;
 :personality_trait "Analytical", "Intellectual", "Detail-Oriented" .
 
-:Elizabeth a Person;
+:Elizabeth a :Person;
 :name "Elizabeth Davis";
 :gender "Female";
 :born_on "1986-12-25"^^xsd:date ;
@@ -93,7 +93,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :hate :Caroline ;
 :personality_trait "Kind", "Compassionate", "Empathetic" .
 
-:Frank a Person;
+:Frank a :Person;
 :name "Frank Johnson";
 :gender "Male";
 :born_on "1983-02-28"^^xsd:date ;
@@ -101,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :love :Henry ;
 :personality_trait "Reliable", "Responsible", "Practical" .
 
-:Grace a Person;
+:Grace a :Person;
 :name "Grace Chen";
 :gender "Female";
 :born_on "1991-11-05"^^xsd:date ;
@@ -109,7 +109,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :hate :Henry ;
 :personality_trait "Optimistic", "Enthusiastic", "Confident" .
 
-:Henry a Person;
+:Henry a :Person;
 :name "Henry Lee";
 :gender "Male";
 :friend :Grace ;
@@ -117,7 +117,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :born_on "1984-04-01"^^xsd:date ;
 :personality_trait "Brave", "Daring", "Fearless" .
 
-:Isabel a Person;
+:Isabel a :Person;
 :name "Isabel Rodriguez";
 :gender "Female";
 :born_on "1993-09-01"^^xsd:date ;
@@ -125,7 +125,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :friend :Jack ;
 :personality_trait "Artistic", "Expressive", "Imaginative" .
 
-:Jack a Person;
+:Jack a :Person;
 :name "Jack Smith" ;
 :gender "Male" ;
 :friend :Katie ;
@@ -133,7 +133,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :born_on "1987-08-15"^^xsd:date ;
 :personality_trait "Competitive", "Determined", "Driven" .
 
-:Katie a Person;
+:Katie a :Person;
 :name "Katie Wilson";
 :gender "Female";
 :friend :Luke ;
@@ -141,14 +141,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :born_on "1994-01-10"^^xsd:date ;
 :personality_trait "Cooperative", "Diplomatic", "Compassionate" .
 
-:Luke a Person;
+:Luke a :Person;
 :name "Luke Gonzalez";
 :gender "Male";
 :friend :Nathan ;
 :born_on "1985-06-30"^^xsd:date ;
 :personality_trait "Outspoken", "Independent", "Assertive" .
 
-:Mary a Person;
+:Mary a :Person;
 :name "Mary Green";
 :gender "Female";
 :born_on "1990-02-05"^^xsd:date ;
@@ -156,52 +156,52 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :hate :Katie ;
 :personality_trait "Independent", "Confident", "Strong-Willed" .
 
-:Nathan a Person;
+:Nathan a :Person;
 :name "Nathan Parker";
-:gender "Male"; 
+:gender "Male";
 :born_on "1992-07-20"^^xsd:date ;
 :hate :Olivia ;
 :friend :Raul ;
-:personality_trait "Confident", "Risk-Taker", "Daring"
+:personality_trait "Confident", "Risk-Taker", "Daring" .
 
-:Olivia a Person;
-:name "Olivia Wilson";
-:gender "Female"; 
+:Olivia a :Person ;
+:name "Olivia Wilson" ;
+:gender "Female";
 :born_on "1988-10-01"^^xsd:date ;
 :friend :William ;
-:personality_trait "Reflective", "Intuitive", "Thoughtful"
+:personality_trait "Reflective", "Intuitive", "Thoughtful" .
 
-:Raul a Person;
+:Raul a :Person;
 :name "Raul Nguyen";
-:gender "Male"; 
+:gender "Male";
 :born_on "1989-11-15"^^xsd:date ;
 :friend :Olivia ;
-:personality_trait "Imaginative", "Eccentric", "Quirky"
+:personality_trait "Imaginative", "Eccentric", "Quirky" .
 
-:Rachel a Person;
+:Rachel a :Person;
 :name "Rachel Lee";
-:gender "Female"; 
+:gender "Female";
 :born_on "1993-12-10"^^xsd:date ;
 :friend :Raul ;
 :hate :Scott ;
 :personality_trait "Compassionate", "Affectionate", "Warm" .
 
-:Scott a Person;
+:Scott a :Person;
 :name "Scott Rodriguez";
-:gender "Male"; 
+:gender "Male";
 :born_on "1987-01-01"^^xsd:date ;
 :friend :William ;
 :love :Tina ;
 :personality_trait "Driven", "Determined", "Ambitious" .
 
-:Tina a Person;
+:Tina a :Person;
 :name "Tina Chen";
-:gender "Female"; 
+:gender "Female";
 :born_on "1991-05-01"^^xsd:date ;
 :friend :Scott ;
-:personality_trait Inspired, "Creative", "Visionary" .
+:personality_trait "Inspired", "Creative", "Visionary" .
 
-:William a Person;
+:William a :Person;
 :name "William Davis" ;
 :gender "Male" ; 
 :born_on "1986-06-15"^^xsd:date ;
