@@ -395,7 +395,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :Matthew a :Person ;
   :name "Matthew Baker" ;
   :gender "Male" ;
-  :born_on "1999-10-22"^^xsd:date  ;
+  :born_on "1999-10-22"^^xsd:date ;
   :friend :Beth ;
   :hate :Samuel ;
   :personality_trait "Confident", "Energetic", "Innovative" .
