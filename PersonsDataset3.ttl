@@ -1,0 +1,401 @@
+PREFIX : <http://example-graph.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Anna
+:Anna a :Person ;
+  :name "Anna Meier" ;
+  :gender "Female" ;
+  :born_on "2000-08-21"^^xsd:date ;
+  :friend :Paul ;
+  :love :Oskar ;
+  :drives :Bicycle ;
+  :personality_trait "Cunning" , "Charismatic" , "Caring" .
+
+:Bicycle a :Means_Of_Transportation ;
+  :brand "Pegasus" .
+
+# Paul
+:Paul a :Person ;
+  :name "Paul Müller" ;
+  :gender "Male" ;
+  :born_on "1985-08-21"^^xsd:date ;
+  :friend :Oskar ;
+  :hate :Fred ;
+  :drives :Car1 ;
+  :personality_trait "Empathetic" , "Fair" , "Helpful" .
+
+:Car1 a :Means_Of_Transportation ;
+  :brand "Audi" ;
+  :type "A1" ;
+  :bj "2001-08"^^xsd:date .
+
+# Fred
+:Fred a :Person ;
+  :name "Fred Schulz" ;
+  :gender "Male" ;
+  :born_on "1993-08-21"^^xsd:date ;
+  :friend :Jane  ;
+  :friend :Amy ;
+  :personality_trait "Focused" , "Hardworking" , "Loyal" .
+
+# Oskar
+:Oskar a :Person ;
+  :name "Oskar Muster" ;
+  :gender "Male" ;
+  :born_on "1985-03-31"^^xsd:date ;
+  :friend :Jane ;
+  :hate :Fred ;
+  :personality_trait "Friendly" , "Charismatic" , "Smart" .
+
+# Jane
+:Jane a :Person ;
+  :name "Jane Schmitz" ;
+  :gender "Female" ;
+  :born_on "1982-04-26"^^xsd:date ;
+  :friend :Anna ;
+  :hate :Fred ;
+  :personality_trait "Modest" , "Perfectionist" , "Objective" .
+
+
+:Amy a :Person ;
+  :name "Amy Johnson" ;
+  :gender "Female" ;
+  :friend :Frank ;
+  :born_on "1980-05-01"^^xsd:date ;
+  :personality_trait "Organized", "Efficient", "Resourceful" .
+
+:Brian a :Person;
+  :name "Brian Thompson";
+  :gender "Male";
+  :friend :Amy ;
+  :hate :Caroline ;
+  :born_on "1985-07-15"^^xsd:date ;
+  :personality_trait "Outgoing", "Charismatic", "Confident" .
+
+:Caroline a :Person;
+  :name "Caroline Wright" ;
+  :gender "Female" ;
+  :friend :Brian ;
+  :friend :David ;
+  :born_on "1990-03-20"^^xsd:date ;
+  :personality_trait "Creative", "Ambitious", "Determined" .
+
+:David a :Person;
+  :name "David Brown";
+  :gender "Male";
+  :friend :Caroline ;
+  :born_on "1988-09-01"^^xsd:date ;
+  :personality_trait "Analytical", "Intellectual", "Detail-Oriented" .
+
+:Elizabeth a :Person;
+  :name "Elizabeth Davis";
+  :gender "Female";
+  :born_on "1986-12-25"^^xsd:date ;
+  :friend :David ;
+  :hate :Caroline ;
+  :personality_trait "Kind", "Compassionate", "Empathetic" .
+
+:Frank a :Person;
+  :name "Frank Johnson";
+  :gender "Male";
+  :born_on "1983-02-28"^^xsd:date ;
+  :friend :Elizabeth ;
+  :love :Henry ;
+  :personality_trait "Reliable", "Responsible", "Practical" .
+
+:Grace a :Person;
+  :name "Grace Chen";
+  :gender "Female";
+  :born_on "1991-11-05"^^xsd:date ;
+  :friend :Isabel ;
+  :hate :Henry ;
+  :personality_trait "Optimistic", "Enthusiastic", "Confident" .
+
+:Henry a :Person;
+  :name "Henry Lee";
+  :gender "Male";
+  :friend :Grace ;
+  :born_on "1984-04-01"^^xsd:date ;
+  :personality_trait "Brave", "Daring", "Fearless" .
+
+:Isabel a :Person ;
+  :name "Isabel Rodriguez" ;
+  :gender "Female" ;
+  :born_on "1993-09-01"^^xsd:date ;
+  :friend :Henry ;
+  :friend :Jack ;
+  :personality_trait "Artistic", "Expressive", "Imaginative" .
+
+:Jack a :Person ;
+  :name "Jack Smith" ;
+  :gender "Male" ;
+  :friend :Katie ;
+  :love :Isabel ;
+  :born_on "1987-08-15"^^xsd:date ;
+  :personality_trait "Competitive", "Determined", "Driven" .
+
+:Katie a :Person ;
+  :name "Katie Wilson";
+  :gender "Female";
+  :friend :Luke ;
+  :hate :Jack ;
+  :born_on "1994-01-10"^^xsd:date ;
+  :personality_trait "Cooperative", "Diplomatic", "Compassionate" .
+
+:Luke a :Person;
+  :name "Luke Gonzalez";
+  :gender "Male";
+  :friend :Nathan ;
+  :born_on "1985-06-30"^^xsd:date ;
+  :personality_trait "Outspoken", "Independent", "Assertive" .
+
+:Mary a :Person;
+  :name "Mary Green";
+  :gender "Female";
+  :born_on "1990-02-05"^^xsd:date ;
+  :friend :Luke ;
+  :hate :Katie ;
+  :personality_trait "Independent", "Confident", "Strong-Willed" .
+
+:Nathan a :Person;
+  :name "Nathan Parker";
+  :gender "Male";
+  :born_on "1992-07-20"^^xsd:date ;
+  :hate :Olivia ;
+  :friend :Raul ;
+  :personality_trait "Confident", "Risk-Taker", "Daring" .
+
+:Olivia a :Person ;
+  :name "Olivia Wilson" ;
+  :gender "Female";
+  :born_on "1988-10-01"^^xsd:date ;
+  :friend :William ;
+  :personality_trait "Reflective", "Intuitive", "Thoughtful" .
+
+:Raul a :Person;
+  :name "Raul Nguyen";
+  :gender "Male";
+  :born_on "1989-11-15"^^xsd:date ;
+  :friend :Olivia ;
+  :personality_trait "Imaginative", "Eccentric", "Quirky" .
+
+:Rachel a :Person;
+  :name "Rachel Lee";
+  :gender "Female";
+  :born_on "1993-12-10"^^xsd:date ;
+  :friend :Raul ;
+  :hate :Scott ;
+  :personality_trait "Compassionate", "Affectionate", "Warm" .
+
+:Scott a :Person;
+  :name "Scott Rodriguez";
+  :gender "Male";
+  :born_on "1987-01-01"^^xsd:date ;
+  :friend :William ;
+  :love :Tina ;
+  :personality_trait "Driven", "Determined", "Ambitious" .
+
+:Tina a :Person;
+  :name "Tina Chen";
+  :gender "Female";
+  :born_on "1991-05-01"^^xsd:date ;
+  :friend :Scott ;
+  :personality_trait "Inspired", "Creative", "Visionary" .
+
+:William a :Person;
+  :name "William Davis" ;
+  :gender "Male" ;
+  :born_on "1986-06-15"^^xsd:date ;
+  :friend :Tina ;
+  :personality_trait "Practical", "Diligent", "Organized" .
+
+:Jenny a :Person ;
+  :name "Jenny Smith" ;
+  :gender "Female" ;
+  :born_on "1999-01-14"^^xsd:date ;
+  :friend :Hans ;
+  :personality_trait "Independent", "Ambitious", "Creative" .
+
+:Ethan a :Person ;
+  :name "Ethan Brown";
+  :gender "Male";
+  :born_on "1997-05-03"^^xsd:date ;
+  :friend :Jenny ;
+  :personality_trait "Confident", "Outgoing", "Charismatic" .
+
+:Ava a :Person ;
+  :name "Ava Johnson" ;
+  :gender "Female" ;
+  :born_on "2002-07-10"^^xsd:date ;
+  :hate :Ethan ;
+  :friend :Jenny ;
+  :personality_trait "Intelligent", "Driven", "Organized" .
+
+:Hans a :Person ;
+  :name "Hans Davis" ;
+  :gender "Male";
+  :born_on "2000-12-22"^^xsd:date ;
+  :friend :Ava ;
+  :hate :Ethan ;
+  :personality_trait "Respectful", "Reliable", "Thoughtful" .
+
+:Isabella a :Person ;
+  :name "Isabella Garcia" ;
+  :gender "Female" ;
+  :born_on "2001-06-16"^^xsd:date ;
+  :friend :Hans ;
+  :personality_trait "Independent", "Artistic", "Passionate" .
+
+:Michael a :Person ;
+  :name "Michael Wilson" ;
+  :gender "Male";
+  :born_on "1998-08-11"^^xsd:date ;
+  :friend :Hans ;
+  :personality_trait "Assertive", "Energetic", "Innovative" .
+
+:Mia a :Person ;
+  :name "Mia Rodriguez" ;
+  :gender "Female" ;
+  :born_on "2003-02-18"^^xsd:date;
+  :love :Michael ;
+  :friend :Isabella ;
+  :personality_trait "Creative", "Empathetic", "Charitable" .
+
+:Alex a :Person ;
+  :name "Alex Lee" ;
+  :gender "Male" ;
+  :born_on "1999-03-06"^^xsd:date ;
+  :friend :Mia ;
+  :hate :Michael ;
+  :personality_trait "Ambitious", "Determined", "Self-disciplined" .
+
+:Charlotte a :Person ;
+  :name "Charlotte Green" ;
+  :gender "Female" ;
+  :born_on "2001-11-24"^^xsd:date ;
+  :friend :Benjamin ;
+  :personality_trait "Confident", "Outspoken", "Independent" .
+
+:Benjamin a :Person ;
+  :name "Benjamin Young" ;
+  :gender "Male" ;
+  :born_on "1998-04-30"^^xsd:date ;
+  :friend :Charlotte ;
+  :friend :Mia ;
+  :personality_trait "Genuine", "Loyal", "Determined" .
+
+:Sophia a :Person ;
+  :name "Sophia King" ;
+  :gender "Female" ;
+  :born_on "2002-09-12"^^xsd:date ;
+  :hate :Charlotte ;
+  :friend :Alex ;
+  :personality_trait "Creative", "Ambitious", "Independent" .
+
+:Dave a :Person ;
+  :name "Dave Baker" ;
+  :gender "Male" ;
+  :born_on "2000-01-20"^^xsd:date ;
+  :friend :Benjamin ;
+  :love :Sophia ;
+  :personality_trait "Respectful", "Reliable", "Considerate" .
+
+:Harper a :Person ;
+  :name "Harper Allen" ;
+  :gender "Female" ;
+  :born_on "2004-03-05"^^xsd:date ;
+  :friend :Sophia ;
+  :hate :Dave ;
+  :personality_trait "Outgoing", "Charismatic", "Confident" .
+
+:Joseph a :Person ;
+  :name "Joseph Parker" ;
+  :gender "Male" ;
+  :born_on "1999-07-15"^^xsd:date ;
+  :friend :Dave ;
+  :personality_trait "Assertive", "Innovative", "Independent" .
+
+:Scarlett a :Person ;
+  :name "Scarlett Wright" ;
+  :gender "Female" ;
+  :born_on "2003-10-02"^^xsd:date ;
+  :hate :Joseph ;
+  :friend :Harper ;
+  :personality_trait "Creative", "Empathetic", "Artistic" .
+
+:Christopher a :Person ;
+  :name "Christopher Adams" ;
+  :gender "Male" ;
+  :born_on "1998-06-28"^^xsd:date ;
+  :friend :Scarlett ;
+  :friend :Joseph ;
+  :personality_trait "Ambitious", "Determined", "Self-disciplined" .
+
+:Chris a :Person ;
+  :name "Chris Nelson" ;
+  :gender "Female" ;
+  :born_on "2002-12-19"^^xsd:date ;
+  :hate :Emma ;
+  :friend :Christopher ;
+  :personality_trait "Independent", "Confident", "Outspoken" .
+
+:Emma a :Person ;
+  :name "Emma Roberts" ;
+  :gender "Female" ;
+  :born_on "1997-07-11"^^xsd:date ;
+  :friend :Abigail ;
+  :friend :Chris ;
+  :personality_trait "Confident", "Independent", "Artistic" .
+
+:James a :Person ;
+  :name "James Wilson" ;
+  :gender "Male" ;
+  :born_on "1999-05-17"^^xsd:date ;
+  :friend :Alexander ;
+  :personality_trait "Ambitious", "Innovative", "Charismatic" .
+
+:Abigail a :Person ;
+  :name "Abigail Johnson" ;
+  :gender "Female" ;
+  :born_on "1996-12-15"^^xsd:date ;
+  :friend :James ;
+  :love :Emma ;
+  :personality_trait "Empathetic", "Creative", "Charitable" .
+
+:Alexander a :Person ;
+  :name "Alexander Davis" ;
+  :gender "Male" ;
+  :born_on "1998-01-19"^^xsd:date ;
+  :friend :Madison ;
+  :hate :Abigail ;
+  :personality_trait "Assertive", "Determined", "Reliable" .
+
+:Madison a :Person ;
+  :name "Madison Green" ;
+  :gender "Female" ;
+  :born_on "2000-03-08"^^xsd:date ;
+  :personality_trait "Independent", "Outspoken", "Charismatic" .
+
+:Samuel a :Person ;
+  :name "Samuel Brown" ;
+  :gender "Male" ;
+  :born_on "1997-06-05"^^xsd:date ;
+  :friend :Matthew ;
+  :love :Beth ;
+  :personality_trait "Respectful", "Thoughtful", "Genuine" .
+
+:Beth a :Person ;
+  :name "Beth Wilson" ;
+  :gender "Female" ;
+  :born_on "2001-02-12"^^xsd:date ;
+  :friend :Madison ;
+  :personality_trait "Artistic", "Independent", "Ambitious" .
+
+:Matthew a :Person ;
+  :name "Matthew Baker" ;
+  :gender "Male" ;
+  :born_on "1999-10-22"^^xsd:date ;
+  :friend :Beth ;
+  :hate :Samuel ;
+  :personality_trait "Confident", "Energetic", "Innovative" .
