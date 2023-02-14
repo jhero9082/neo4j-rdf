@@ -101,6 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :gender "Male";
   :born_on "1983-02-28"^^xsd:date ;
   :friend :Elizabeth ;
+  :friend :Charlotte ;
   :love :Henry ;
   :personality_trait "Reliable", "Responsible", "Practical" .
 
