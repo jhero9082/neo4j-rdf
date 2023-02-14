@@ -214,7 +214,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :name "Jenny Smith" ;
   :gender "Female" ;
   :born_on "1999-01-14"^^xsd:date ;
-  :friend Hans ;
+  :friend :Hans ;
   :personality_trait "Independent", "Ambitious", "Creative" .
 
 :Ethan a :Person ;
