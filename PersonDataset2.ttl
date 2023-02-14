@@ -35,6 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :gender "Male" ;
   :born_on "1993-08-21"^^xsd:date ;
   :friend :Jane  ;
+  :friend :Amy ;
   :personality_trait "Focused" , "Hardworking" , "Loyal" .
 
 # Oskar
