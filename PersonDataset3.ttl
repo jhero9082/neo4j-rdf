@@ -119,15 +119,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "1984-04-01"^^xsd:date ;
   :personality_trait "Brave", "Daring", "Fearless" .
 
-:Isabel a :Person;
-  :name "Isabel Rodriguez";
-  :gender "Female";
+:Isabel a :Person ;
+  :name "Isabel Rodriguez" ;
+  :gender "Female" ;
   :born_on "1993-09-01"^^xsd:date ;
   :friend :Henry ;
   :friend :Jack ;
   :personality_trait "Artistic", "Expressive", "Imaginative" .
 
-:Jack a :Person;
+:Jack a :Person ;
   :name "Jack Smith" ;
   :gender "Male" ;
   :friend :Katie ;
@@ -135,7 +135,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :born_on "1987-08-15"^^xsd:date ;
   :personality_trait "Competitive", "Determined", "Driven" .
 
-:Katie a :Person;
+:Katie a :Person ;
   :name "Katie Wilson";
   :gender "Female";
   :friend :Luke ;
@@ -210,21 +210,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Tina ;
   :personality_trait "Practical", "Diligent", "Organized" .
 
-:Jenny
+:Jenny a :Person ;
   :name "Jenny Smith" ;
   :gender "Female" ;
   :born_on "1999-01-14"^^xsd:date ;
   :friend Hans ;
   :personality_trait "Independent", "Ambitious", "Creative" .
 
-:Ethan
+:Ethan a :Person ;
   :name "Ethan Brown";
   :gender "Male";
   :born_on "1997-05-03"^^xsd:date ;
   :friend :Jenny ;
   :personality_trait "Confident", "Outgoing", "Charismatic" .
 
-:Ava
+:Ava a :Person ;
   :name "Ava Johnson" ;
   :gender "Female" ;
   :born_on "2002-07-10"^^xsd:date ;
@@ -232,7 +232,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Jenny ;
   :personality_trait "Intelligent", "Driven", "Organized" .
 
-:Hans
+:Hans a :Person ;
   :name "Hans Davis" ;
   :gender "Male";
   :born_on "2000-12-22"^^xsd:date ;
@@ -240,21 +240,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :hate :Ethan ;
   :personality_trait "Respectful", "Reliable", "Thoughtful" .
 
-:Isabella
+:Isabella a :Person ;
   :name "Isabella Garcia" ;
   :gender "Female" ;
   :born_on "2001-06-16"^^xsd:date ;
   :friend :Hans ;
   :personality_trait "Independent", "Artistic", "Passionate" .
 
-:Michael
+:Michael a :Person ;
   :name "Michael Wilson" ;
   :gender "Male";
   :born_on "1998-08-11"^^xsd:date ;
   :friend :Hans ;
   :personality_trait "Assertive", "Energetic", "Innovative" .
 
-:Mia
+:Mia a :Person ;
   :name "Mia Rodriguez" ;
   :gender "Female" ;
   :born_on "2003-02-18"^^xsd:date;
@@ -262,7 +262,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Isabella ;
   :personality_trait "Creative", "Empathetic", "Charitable" .
 
-:Alex
+:Alex a :Person ;
   :name "Alex Lee" ;
   :gender "Male" ;
   :born_on "1999-03-06"^^xsd:date ;
@@ -270,14 +270,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :hate :Michael ;
   :personality_trait "Ambitious", "Determined", "Self-disciplined" .
 
-:Charlotte
+:Charlotte a :Person ;
   :name "Charlotte Green" ;
   :gender "Female" ;
   :born_on "2001-11-24"^^xsd:date ;
   :friend :Benjamin ;
   :personality_trait "Confident", "Outspoken", "Independent" .
 
-:Benjamin
+:Benjamin a :Person ;
   :name "Benjamin Young" ;
   :gender "Male" ;
   :born_on "1998-04-30"^^xsd:date ;
@@ -285,7 +285,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Mia ;
   :personality_trait "Genuine", "Loyal", "Determined" .
 
-:Sophia
+:Sophia a :Person ;
   :name "Sophia King" ;
   :gender "Female" ;
   :born_on "2002-09-12"^^xsd:date ;
@@ -293,7 +293,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Alex ;
   :personality_trait "Creative", "Ambitious", "Independent" .
 
-:Dave
+:Dave a :Person ;
   :name "Dave Baker" ;
   :gender "Male" ;
   :born_on "2000-01-20"^^xsd:date ;
@@ -301,7 +301,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :love :Sophia ;
   :personality_trait "Respectful", "Reliable", "Considerate" .
 
-:Harper
+:Harper a :Person ;
   :name "Harper Allen" ;
   :gender "Female" ;
   :born_on "2004-03-05"^^xsd:date ;
@@ -309,14 +309,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :hate :Dave ;
   :personality_trait "Outgoing", "Charismatic", "Confident" .
 
-:Joseph
+:Joseph a :Person ;
   :name "Joseph Parker" ;
   :gender "Male" ;
   :born_on "1999-07-15"^^xsd:date ;
   :friend :Dave ;
   :personality_trait "Assertive", "Innovative", "Independent" .
 
-:Scarlett
+:Scarlett a :Person ;
   :name "Scarlett Wright" ;
   :gender "Female" ;
   :born_on "2003-10-02"^^xsd:date ;
@@ -324,7 +324,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Harper ;
   :personality_trait "Creative", "Empathetic", "Artistic" .
 
-:Christopher
+:Christopher a :Person ;
   :name "Christopher Adams" ;
   :gender "Male" ;
   :born_on "1998-06-28"^^xsd:date ;
@@ -332,7 +332,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Joseph ;
   :personality_trait "Ambitious", "Determined", "Self-disciplined" .
 
-:Chris
+:Chris a :Person ;
   :name "Chris Nelson" ;
   :gender "Female" ;
   :born_on "2002-12-19"^^xsd:date ;
@@ -340,7 +340,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Christopher ;
   :personality_trait "Independent", "Confident", "Outspoken" .
 
-:Emma
+:Emma a :Person ;
   :name "Emma Roberts" ;
   :gender "Female" ;
   :born_on "1997-07-11"^^xsd:date ;
@@ -348,14 +348,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :friend :Chris ;
   :personality_trait "Confident", "Independent", "Artistic" .
 
-:James
+:James a :Person ;
   :name "James Wilson" ;
   :gender "Male" ;
   :born_on "1999-05-17"^^xsd:date ;
   :friend :Alexander ;
   :personality_trait "Ambitious", "Innovative", "Charismatic" .
 
-:Abigail
+:Abigail a :Person ;
   :name "Abigail Johnson" ;
   :gender "Female" ;
   :born_on "1996-12-15"^^xsd:date ;
@@ -363,7 +363,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :love :Emma ;
   :personality_trait "Empathetic", "Creative", "Charitable" .
 
-:Alexander
+:Alexander a :Person ;
   :name "Alexander Davis" ;
   :gender "Male" ;
   :born_on "1998-01-19"^^xsd:date ;
@@ -371,13 +371,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :hate :Abigail ;
   :personality_trait "Assertive", "Determined", "Reliable" .
 
-:Madison
+:Madison a :Person ;
   :name "Madison Green" ;
   :gender "Female" ;
   :born_on "2000-03-08"^^xsd:date ;
   :personality_trait "Independent", "Outspoken", "Charismatic" .
 
-:Samuel
+:Samuel a :Person ;
   :name "Samuel Brown" ;
   :gender "Male" ;
   :born_on "1997-06-05"^^xsd:date ;
@@ -385,14 +385,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :love :Beth ;
   :personality_trait "Respectful", "Thoughtful", "Genuine" .
 
-:Beth
+:Beth a :Person ;
   :name "Beth Wilson" ;
   :gender "Female" ;
   :born_on "2001-02-12"^^xsd:date ;
   :friend :Madison ;
   :personality_trait "Artistic", "Independent", "Ambitious" .
 
-:Matthew
+:Matthew a :Person ;
   :name Matthew Baker ;
   :gender "Male" ;
   :born_on "1999-10-22"^^xsd:date  ;
