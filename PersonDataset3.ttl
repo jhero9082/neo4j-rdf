@@ -393,7 +393,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   :personality_trait "Artistic", "Independent", "Ambitious" .
 
 :Matthew a :Person ;
-  :name Matthew Baker ;
+  :name "Matthew Baker" ;
   :gender "Male" ;
   :born_on "1999-10-22"^^xsd:date  ;
   :friend :Beth ;
